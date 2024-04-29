@@ -15,12 +15,12 @@ document.querySelector('#btnCopia').addEventListener('click', () => {
         const senha = document.querySelector('#senha').textContent;
 
     if(senha.length==0){
-        alert('É necessário gerar uma senha antes')
+        alert('You need to generate a password first')
     }
     else{
    if (navigator.clipboard) {
        navigator.clipboard.writeText(senha).then(() => {
-           alert('Senha copiada com sucesso')
+           alert('Password copied successfully')
 
        });
    }
